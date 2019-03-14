@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="loanCalculatorPane" prefHeight="174.0" prefWidth="326.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bdj.Simple_Loan_CalculatorController">
+   <children>
+      <Label fx:id="amount_label" focusTraversable="false" layoutX="32.0" layoutY="26.0" nodeOrientation="RIGHT_TO_LEFT" text="Amount" textAlignment="RIGHT" />
+      <Label fx:id="interest_label" focusTraversable="false" layoutX="34.0" layoutY="61.0" nodeOrientation="RIGHT_TO_LEFT" text="Interest" textAlignment="RIGHT" />
+      <Label fx:id="terms_label" focusTraversable="false" layoutX="38.0" layoutY="91.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="17.0" prefWidth="34.0" text="Terms" textAlignment="RIGHT" />
+      <Label fx:id="payments_label" focusTraversable="false" layoutX="29.0" layoutY="125.0" nodeOrientation="RIGHT_TO_LEFT" text="Payments" textAlignment="RIGHT" />
+      <TextField fx:id="amountTextField" layoutX="131.0" layoutY="25.0" />
+      <Slider fx:id="interestSlider" blockIncrement="0.05" layoutX="131.0" layoutY="62.0" majorTickUnit="7.0" max="30.0" min="2.0" prefHeight="14.0" prefWidth="150.0" showTickMarks="true" value="16.0" />
+      <ChoiceBox fx:id="termChoice" layoutX="131.0" layoutY="90.0" prefWidth="150.0" />
+      <TextField fx:id="paymentsTextField" editable="false" layoutX="131.0" layoutY="124.0" />
+   </children>
+</AnchorPane>
